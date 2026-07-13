@@ -80,11 +80,11 @@ public class IterationService
 
     int countSP = allTasks.Sum(x => x.StoryPoints ?? 0);
     int closedSP = closedTask.Sum(x => x.StoryPoints ?? 0);
-    var percentClosedSP = Math.Round(((double)closedSP / (double)countSP) * 100);
+    var percentClosedSP = countSP == 0 ? 0 : Math.Round(((double)closedSP / (double)countSP) * 100);
 
     int countUS = allUS.Count;
     int countClosedUS = closedUS.Count;
-    var percentClosedUS = Math.Round(((double)countClosedUS / (double)countUS) * 100);
+    var percentClosedUS = countUS == 0 ? 0 : Math.Round(((double)countClosedUS / (double)countUS) * 100);
 
     return new IterationStatApi
     {
