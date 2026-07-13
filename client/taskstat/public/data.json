@@ -1,0 +1,1308 @@
+[
+    {
+        "Id": 320646,
+        "Rev": 61,
+        "Fields": {
+            "System.Id": 320646,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 473141,
+            "System.Title": "!! Состояние ЗЗУ. Отображать на вкладе Состояние ФИО замещающего, выполнившего задание",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-17T04:45:34.027Z",
+            "System.Tags": "26.1.0.0053; SPDKASBUG; Крупные доработки"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/320646"
+    },
+    {
+        "Id": 421863,
+        "Rev": 35,
+        "Fields": {
+            "System.Id": 421863,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 474135,
+            "System.Title": "Нет документации для NoCode Server, Shared, ClientBase DLL",
+            "Microsoft.VSTS.Common.ActivatedDate": "2025-12-15T11:24:03.223Z",
+            "System.Tags": "26.1.0.0056"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/421863"
+    },
+    {
+        "Id": 452988,
+        "Rev": 25,
+        "Fields": {
+            "System.Id": 452988,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 469475,
+            "System.Title": "Доработать статью про диалоги",
+            "Microsoft.VSTS.Common.ActivatedDate": "2025-10-27T09:50:52.71Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-20T05:16:58.59Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 3.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/452988"
+    },
+    {
+        "Id": 459175,
+        "Rev": 11,
+        "Fields": {
+            "System.Id": 459175,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 458679,
+            "System.Title": "Добавить статью про публикацию в kubernetes",
+            "Microsoft.VSTS.Common.ActivatedDate": "2025-11-27T11:02:07.917Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-17T06:08:58.743Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 2.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/459175"
+    },
+    {
+        "Id": 463438,
+        "Rev": 20,
+        "Fields": {
+            "System.Id": 463438,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 467104,
+            "System.Title": "Рефакторинг DeploymentManagerBase и его наследников",
+            "Microsoft.VSTS.Common.ActivatedDate": "2025-12-17T10:20:39.58Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-20T09:48:05.923Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 7.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/463438"
+    },
+    {
+        "Id": 466082,
+        "Rev": 31,
+        "Fields": {
+            "System.Id": 466082,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 456744,
+            "System.Title": "Редактирование ExternalLink",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-11T10:16:51.393Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-12T09:03:26.887Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 5.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/466082"
+    },
+    {
+        "Id": 466085,
+        "Rev": 13,
+        "Fields": {
+            "System.Id": 466085,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 472018,
+            "System.Title": "Генерация ошибки, если пакет не поддерживается",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-11T10:18:14.143Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-17T11:46:44.013Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 2.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/466085"
+    },
+    {
+        "Id": 466903,
+        "Rev": 22,
+        "Fields": {
+            "System.Id": 466903,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 470953,
+            "System.Title": "!! [Пожелание] Параметры диалога. Перенести настройку кода параметра в другое место",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-24T14:06:26.667Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 4.0,
+            "System.Tags": "26.1.0.0056"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/466903"
+    },
+    {
+        "Id": 467880,
+        "Rev": 18,
+        "Fields": {
+            "System.Id": 467880,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 472126,
+            "System.Title": "[Coverage] NoCode/src/NoCode.ClientBase/NoCodeEntity/NoCodeEntityHandlers.cs",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-29T01:00:38.59Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-03-04T04:58:28.85Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 2.0,
+            "System.Tags": "flex"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/467880"
+    },
+    {
+        "Id": 469185,
+        "Rev": 13,
+        "Fields": {
+            "System.Id": 469185,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 458931,
+            "System.Title": "Поместить на ленту кнопку добавления группы параметров",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-25T08:46:11.93Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-09T06:59:06.35Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 2.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/469185"
+    },
+    {
+        "Id": 469186,
+        "Rev": 27,
+        "Fields": {
+            "System.Id": 469186,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 458931,
+            "System.Title": "Диалог выбора свойств",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-10T09:08:11.133Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-12T06:46:35.89Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 4.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/469186"
+    },
+    {
+        "Id": 469187,
+        "Rev": 14,
+        "Fields": {
+            "System.Id": 469187,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 458931,
+            "System.Title": "Получения набора доступных свойств для списка в диалоге добавления свойств диалога",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-25T08:57:46.76Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-11T06:12:23.863Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 3.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/469187"
+    },
+    {
+        "Id": 469193,
+        "Rev": 18,
+        "Fields": {
+            "System.Id": 469193,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 458935,
+            "System.Title": "Добавление действия создания сущности",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-25T09:02:56.437Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-16T06:07:37.643Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 3.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/469193"
+    },
+    {
+        "Id": 469197,
+        "Rev": 13,
+        "Fields": {
+            "System.Id": 469197,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 458936,
+            "System.Title": "Добавление событий инициализации",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-25T09:05:48.19Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-17T07:33:40.713Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 4.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/469197"
+    },
+    {
+        "Id": 469200,
+        "Rev": 15,
+        "Fields": {
+            "System.Id": 469200,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 458937,
+            "System.Title": "Добавить контролы на форму",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-25T09:08:00.853Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-16T12:44:35.683Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 3.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/469200"
+    },
+    {
+        "Id": 469421,
+        "Rev": 16,
+        "Fields": {
+            "System.Id": 469421,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 470949,
+            "System.Title": "Доступна отладка в выражении инициализации параметров",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-26T09:01:19.437Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 1.0,
+            "System.Tags": "26.1.0.0054"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/469421"
+    },
+    {
+        "Id": 469456,
+        "Rev": 15,
+        "Fields": {
+            "System.Id": 469456,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 470951,
+            "System.Title": "Кривое имя дочерней коллекции в ошибки валидации",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-26T10:17:53.93Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 1.0,
+            "System.Tags": "26.1.0.0055"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/469456"
+    },
+    {
+        "Id": 469497,
+        "Rev": 14,
+        "Fields": {
+            "System.Id": 469497,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 458931,
+            "System.Title": "Обработка создания параметров",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-26T11:08:36.717Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-11T06:12:23.863Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 4.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/469497"
+    },
+    {
+        "Id": 469561,
+        "Rev": 24,
+        "Fields": {
+            "System.Id": 469561,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 470948,
+            "System.Title": "Мастер диалоги. SetParameter чуствителен к регистру",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-27T06:43:38.537Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 1.0,
+            "System.Tags": "26.1.0.0054"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/469561"
+    },
+    {
+        "Id": 469809,
+        "Rev": 13,
+        "Fields": {
+            "System.Id": 469809,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 470948,
+            "System.Title": "[Coverage] NoCode/src/NoCode.Server/CustomDialog/Validators/CustomDialogParametersValidator.cs",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-28T01:00:44.61Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-18T12:34:32.513Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 2.0,
+            "System.Tags": "flex"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/469809"
+    },
+    {
+        "Id": 469813,
+        "Rev": 12,
+        "Fields": {
+            "System.Id": 469813,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 471626,
+            "System.Title": "[Coverage] Web/src/SungeroServer.WebAPI/Dialogs/CustomDialogInstance.cs",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-28T01:00:49.007Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-20T06:38:14.157Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 2.0,
+            "System.Tags": "flex"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/469813"
+    },
+    {
+        "Id": 470314,
+        "Rev": 23,
+        "Fields": {
+            "System.Id": 470314,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 446162,
+            "System.Title": "[Проверить]Доработки. Не адаптируется выражение из события инициализации в кастомном диалоге",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-29T12:27:11.357Z",
+            "System.Tags": "26.1.0.0048"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/470314"
+    },
+    {
+        "Id": 470572,
+        "Rev": 11,
+        "Fields": {
+            "System.Id": 470572,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Active",
+            "System.Title": "В sungero_core_absence нет поля entityversion. Техдолг?",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-03T07:56:13.427Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/470572"
+    },
+    {
+        "Id": 470970,
+        "Rev": 21,
+        "Fields": {
+            "System.Id": 470970,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 446162,
+            "System.Title": "[Проверить]Сообщение валидации в настройке диалога не указывает тип ненайденной сущности",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-03T12:49:01.317Z",
+            "System.Tags": "26.1.0.0048"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/470970"
+    },
+    {
+        "Id": 471232,
+        "Rev": 12,
+        "Fields": {
+            "System.Id": 471232,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 458931,
+            "System.Title": "Добавить иконку для добавленной на ленту кнопки",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-04T12:04:01.157Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-10T06:12:14.29Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 1.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/471232"
+    },
+    {
+        "Id": 471907,
+        "Rev": 19,
+        "Fields": {
+            "System.Id": 471907,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 472053,
+            "System.Title": "Диалоги. Дважды обход по всем выражениям и получение токенов при копировании.",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-09T05:02:19.043Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 2.0,
+            "System.Tags": "26.1.0.0055"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/471907"
+    },
+    {
+        "Id": 471943,
+        "Rev": 9,
+        "Fields": {
+            "System.Id": 471943,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 472018,
+            "System.Title": "[WebServer] Ошибка обработки элемента с типом \"{S}\", именем \"{S}\"В работе\"\" и UUID {GUID}. Ошибка преобразования вычисляемого выражения. (Convert)",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-11T05:53:00.203Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-16T12:01:12.657Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/471943"
+    },
+    {
+        "Id": 471992,
+        "Rev": 11,
+        "Fields": {
+            "System.Id": 471992,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 472148,
+            "System.Title": "[Coverage] NoCode/src/NoCode.Export/Adaptation/NoCodeExpressionAdapter.cs",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-09T01:00:47.65Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-17T07:11:25.4Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 2.0,
+            "System.Tags": "flex"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/471992"
+    },
+    {
+        "Id": 472191,
+        "Rev": 9,
+        "Fields": {
+            "System.Id": 472191,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 470785,
+            "System.Title": "Подготовка к исследованию",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-09T07:24:04.913Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-18T08:12:58.677Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 3.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/472191"
+    },
+    {
+        "Id": 472355,
+        "Rev": 19,
+        "Fields": {
+            "System.Id": 472355,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 472356,
+            "System.Title": "Аура. Не экспортируется вариант процесса. Нужны права на изменения на справочник, который используется внутри процесса",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-09T13:14:22.137Z",
+            "System.Tags": "26.1.0.0048"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/472355"
+    },
+    {
+        "Id": 472827,
+        "Rev": 6,
+        "Fields": {
+            "System.Id": 472827,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 458936,
+            "System.Title": "Тесты",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-11T10:15:30.78Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-16T06:45:47.273Z"
+        },
+        "CommentVersionRef": {
+            "CommentId": 472311,
+            "Version": 1,
+            "Url": "https://rxtfs.directum.ru/IS-Builder8/b9da89da-be0f-4aa0-987f-fe4b8f25299b/_apis/wit/workItems/472827/comments/472311/versions/1"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/472827"
+    },
+    {
+        "Id": 472828,
+        "Rev": 18,
+        "Fields": {
+            "System.Id": 472828,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 458931,
+            "System.Title": "Доступны свойства \"фотография\" для сотрудника",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-11T10:16:51.403Z",
+            "System.Tags": "26.1.0.0051"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/472828"
+    },
+    {
+        "Id": 472868,
+        "Rev": 6,
+        "Fields": {
+            "System.Id": 472868,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 456744,
+            "System.Title": "Ограничить список доступных в поле \"Сущность\" только теми экземплярами, на которые есть external Link",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-11T12:48:38.22Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-19T13:14:45.117Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/472868"
+    },
+    {
+        "Id": 473164,
+        "Rev": 8,
+        "Fields": {
+            "System.Id": 473164,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Resolved",
+            "System.Parent": 458931,
+            "System.Title": "Создание параметров диалога. Добавление параметров со свойством типа \"Текст\" и \"Бинарные данные\" завершается ошибкой",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-13T06:23:37.557Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/473164"
+    },
+    {
+        "Id": 473271,
+        "Rev": 27,
+        "Fields": {
+            "System.Id": 473271,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 458937,
+            "System.Title": "Параметры добавляются не в том порядке как я их вижу в списке.",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-13T09:46:32.95Z",
+            "System.Tags": "26.1.0.0056"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/473271"
+    },
+    {
+        "Id": 473482,
+        "Rev": 11,
+        "Fields": {
+            "System.Id": 473482,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Resolved",
+            "System.Parent": 458936,
+            "System.Title": "Отсуствует параметр $param в строке шаблона в добавленном событии инциализации",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-16T07:44:31.07Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/473482"
+    },
+    {
+        "Id": 473506,
+        "Rev": 12,
+        "Fields": {
+            "System.Id": 473506,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 473530,
+            "System.Title": "Пропадает добавленное действие при запуске диалога из карточки",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-16T09:09:45.827Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-19T06:11:25.883Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/473506"
+    },
+    {
+        "Id": 473586,
+        "Rev": 10,
+        "Fields": {
+            "System.Id": 473586,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Resolved",
+            "System.Parent": 458936,
+            "System.Title": "Ошибка про отсутствие прав при заполнении выражений событий диалога",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-16T11:00:40.66Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/473586"
+    },
+    {
+        "Id": 473667,
+        "Rev": 9,
+        "Fields": {
+            "System.Id": 473667,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Resolved",
+            "System.Parent": 456744,
+            "System.Title": "NoCode. Externallink. Не обновляется внешняя ссылка для перекрытой сущности",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-16T12:52:13.73Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/473667"
+    },
+    {
+        "Id": 473682,
+        "Rev": 10,
+        "Fields": {
+            "System.Id": 473682,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Resolved",
+            "System.Parent": 456744,
+            "System.Title": "NoCode. Externallink. В  диалоге \"Обновление внешней ссылки\" для контроля \"Тип сущности\" доступны абстрактные типы",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-16T13:03:31.767Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/473682"
+    },
+    {
+        "Id": 473694,
+        "Rev": 8,
+        "Fields": {
+            "System.Id": 473694,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Resolved",
+            "System.Parent": 458936,
+            "System.Title": "System.Object[] вместо имени сущности при создании записи из действия созданного при добавлении параметров",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-17T05:17:09.593Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/473694"
+    },
+    {
+        "Id": 473696,
+        "Rev": 21,
+        "Fields": {
+            "System.Id": 473696,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 473789,
+            "System.Title": "[Aura] При попытке импорта на стенд ноу-код схемы упала ошибка: Ошибка обработки элемента с типом \"Вариант процесса\"",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-17T05:32:34.817Z",
+            "System.Tags": "26.1.0.0054"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/473696"
+    },
+    {
+        "Id": 474058,
+        "Rev": 12,
+        "Fields": {
+            "System.Id": 474058,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 470949,
+            "System.Title": "Отладка осталась доступна для событий инициализации логических параметров",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-18T06:14:46.163Z",
+            "System.Tags": "26.1.0.0054"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474058"
+    },
+    {
+        "Id": 474087,
+        "Rev": 5,
+        "Fields": {
+            "System.Id": 474087,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 473774,
+            "System.Title": "Подготовка к исследованию",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-18T06:16:51.29Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-20T10:55:46.333Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 3.0
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474087"
+    },
+    {
+        "Id": 474144,
+        "Rev": 6,
+        "Fields": {
+            "System.Id": 474144,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 470785,
+            "System.Title": "Сформировать требования по зависимостям",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-18T08:04:13.62Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-18T19:40:33.94Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474144"
+    },
+    {
+        "Id": 474145,
+        "Rev": 8,
+        "Fields": {
+            "System.Id": 474145,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 470785,
+            "System.Title": "Разобраться как добавить действие в иcторию",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-18T08:04:29.477Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-18T10:52:58.697Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474145"
+    },
+    {
+        "Id": 474146,
+        "Rev": 5,
+        "Fields": {
+            "System.Id": 474146,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 470785,
+            "System.Title": "Найти задачи по ошибкам импорта. Понять, что сделано, что будем делать",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-18T08:05:06.72Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-18T11:06:36.633Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474146"
+    },
+    {
+        "Id": 474189,
+        "Rev": 16,
+        "Fields": {
+            "System.Id": 474189,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 473789,
+            "System.Title": "При импорте варианта процесса в таблице создались записи с пустыми externalentityid и externalsystemid",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-18T09:58:41.043Z",
+            "System.Tags": "26.1.0.0055"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474189"
+    },
+    {
+        "Id": 474252,
+        "Rev": 6,
+        "Fields": {
+            "System.Id": 474252,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 470785,
+            "System.Title": "Расписать требования по интерфейсу просмотра пакета",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-18T13:09:30.197Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-19T09:31:18.677Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474252"
+    },
+    {
+        "Id": 474254,
+        "Rev": 3,
+        "Fields": {
+            "System.Id": 474254,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 470785,
+            "System.Title": "Расписать требования по экспорту",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-18T13:10:24.51Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-19T06:51:45.38Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474254"
+    },
+    {
+        "Id": 474255,
+        "Rev": 4,
+        "Fields": {
+            "System.Id": 474255,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 470785,
+            "System.Title": "Расписать требования по запуску импорта",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-18T13:11:55.65Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-19T09:03:23.03Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474255"
+    },
+    {
+        "Id": 474256,
+        "Rev": 15,
+        "Fields": {
+            "System.Id": 474256,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Bug",
+            "System.State": "Closed",
+            "System.Parent": 472053,
+            "System.Title": "Теряются отображаемые имена шагов при создании копии диалога",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-19T04:47:28.933Z",
+            "System.Tags": "26.1.0.0055"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474256"
+    },
+    {
+        "Id": 474257,
+        "Rev": 5,
+        "Fields": {
+            "System.Id": 474257,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 470785,
+            "System.Title": "Расписать требования по проверкам существования настроек",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-18T13:13:59.807Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-19T14:04:42.23Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474257"
+    },
+    {
+        "Id": 474258,
+        "Rev": 4,
+        "Fields": {
+            "System.Id": 474258,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 470785,
+            "System.Title": "Расписать требования по истории импорта",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-18T13:15:43.153Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-19T06:31:03.873Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474258"
+    },
+    {
+        "Id": 474977,
+        "Rev": 5,
+        "Fields": {
+            "System.Id": 474977,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 470785,
+            "System.Title": "Расписать как сделать в диалоге прогресс в виде бегущей линии (как в карточке)",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-20T08:30:36.877Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-20T13:40:02.747Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474977"
+    },
+    {
+        "Id": 474983,
+        "Rev": 4,
+        "Fields": {
+            "System.Id": 474983,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 470785,
+            "System.Title": "Посмотреть длительности поиска по истории по операциям",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-20T08:43:45.017Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-24T06:20:19.08Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474983"
+    },
+    {
+        "Id": 475033,
+        "Rev": 8,
+        "Fields": {
+            "System.Id": 475033,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 470785,
+            "System.Title": "Посмотреть как долго выполняется импорт с большим кол-вом сущностей",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-20T10:56:57.647Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-20T14:35:45.087Z"
+        },
+        "CommentVersionRef": {
+            "CommentId": 474205,
+            "Version": 1,
+            "Url": "https://rxtfs.directum.ru/IS-Builder8/b9da89da-be0f-4aa0-987f-fe4b8f25299b/_apis/wit/workItems/475033/comments/474205/versions/1"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/475033"
+    },
+    {
+        "Id": 475039,
+        "Rev": 4,
+        "Fields": {
+            "System.Id": 475039,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 470785,
+            "System.Title": "Посмотреть окно результата импорта с большим кол-вом невалидных настроек",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-20T10:58:30.457Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-20T14:35:41.033Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/475039"
+    },
+    {
+        "Id": 478604,
+        "Rev": 5,
+        "Fields": {
+            "System.Id": 478604,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "Task",
+            "System.State": "Closed",
+            "System.Parent": 473774,
+            "System.Title": "Согласовать API",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-03-12T11:06:11.643Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-03-13T10:58:36.52Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/478604"
+    },
+    {
+        "Id": 446162,
+        "Rev": 37,
+        "Fields": {
+            "System.Id": 446162,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 4",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Title": "Доработки. Диалоги. Поддержка шагов 👣. Уведомления об успешной отправке данных формы",
+            "Microsoft.VSTS.Common.ActivatedDate": "2025-09-26T07:18:20.337Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-10T09:48:44.19Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 10.0,
+            "System.Tags": "Крупные доработки"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/446162"
+    },
+    {
+        "Id": 456744,
+        "Rev": 38,
+        "Fields": {
+            "System.Id": 456744,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 4",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Parent": 451083,
+            "System.Title": "[1] Редактирование ExternalLink",
+            "Microsoft.VSTS.Common.ActivatedDate": "2025-11-18T09:19:23.567Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-17T12:16:51.92Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 9.0,
+            "System.Tags": "Feature"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/456744"
+    },
+    {
+        "Id": 458679,
+        "Rev": 28,
+        "Fields": {
+            "System.Id": 458679,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Parent": 447301,
+            "System.Title": "LiveDeploy. Актуализация статей",
+            "Microsoft.VSTS.Common.ActivatedDate": "2025-11-26T10:19:08.973Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-17T06:09:11.297Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 3.0,
+            "System.Tags": "Feature"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/458679"
+    },
+    {
+        "Id": 458931,
+        "Rev": 22,
+        "Fields": {
+            "System.Id": 458931,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 4",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Parent": 451093,
+            "System.Title": "Создание параметров диалога. Добавление набора параметров диалога",
+            "Microsoft.VSTS.Common.ActivatedDate": "2025-11-27T05:37:03.777Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-13T12:23:03.727Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 18.0,
+            "System.Tags": "Feature"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/458931"
+    },
+    {
+        "Id": 458935,
+        "Rev": 21,
+        "Fields": {
+            "System.Id": 458935,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Parent": 451093,
+            "System.Title": "Создание параметров диалога. Действие создания сущности",
+            "Microsoft.VSTS.Common.ActivatedDate": "2025-11-27T05:40:26.923Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-17T07:34:44.893Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 12.0,
+            "System.Tags": "Feature"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/458935"
+    },
+    {
+        "Id": 458936,
+        "Rev": 21,
+        "Fields": {
+            "System.Id": 458936,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Parent": 451093,
+            "System.Title": "Создание параметров диалога. События инициализации параметров",
+            "Microsoft.VSTS.Common.ActivatedDate": "2025-11-27T05:41:28.82Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-17T07:34:51.783Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 10.0,
+            "System.Tags": "Feature"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/458936"
+    },
+    {
+        "Id": 458937,
+        "Rev": 24,
+        "Fields": {
+            "System.Id": 458937,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Parent": 451093,
+            "System.Title": "[1] Создание параметров диалога. Добавление элементов на форму диалога.",
+            "Microsoft.VSTS.Common.ActivatedDate": "2025-11-27T05:42:35.877Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-20T05:43:10.207Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 10.0,
+            "System.Tags": "Feature"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/458937"
+    },
+    {
+        "Id": 467104,
+        "Rev": 27,
+        "Fields": {
+            "System.Id": 467104,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration Support",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Title": "Техдолг. Рефакторинг DeploymentManagerBase и его наследников",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-15T05:26:46.437Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-03-26T06:02:31.023Z",
+            "Microsoft.VSTS.Scheduling.StoryPoints": 11.0,
+            "System.Tags": "Техдолг"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/467104"
+    },
+    {
+        "Id": 469475,
+        "Rev": 14,
+        "Fields": {
+            "System.Id": 469475,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Parent": 452276,
+            "System.Title": "Мастер диалог. Написание статьи",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-01-26T10:25:15.7Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-24T09:16:55.877Z",
+            "System.Tags": "Feature"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/469475"
+    },
+    {
+        "Id": 470785,
+        "Rev": 18,
+        "Fields": {
+            "System.Id": 470785,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Parent": 470500,
+            "System.Title": "26.2_1 Исследование. Детальный выбор импортируемых и экспортируемых настроек",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-02T12:45:32.407Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-03-02T06:12:13.763Z",
+            "System.Tags": "Feature"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/470785"
+    },
+    {
+        "Id": 470948,
+        "Rev": 10,
+        "Fields": {
+            "System.Id": 470948,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Parent": 452276,
+            "System.Title": "Мастер диалоги. SetParameter чуствителен к регистру",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-03T10:06:25.323Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-19T04:51:56.573Z",
+            "System.Tags": "Feature"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/470948"
+    },
+    {
+        "Id": 470949,
+        "Rev": 14,
+        "Fields": {
+            "System.Id": 470949,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Parent": 452276,
+            "System.Title": "Мастер диалоги. Доступна отладка в выражении инициализации параметров",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-03T10:07:47.413Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-18T12:03:02.643Z",
+            "System.Tags": "Feature"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/470949"
+    },
+    {
+        "Id": 470951,
+        "Rev": 15,
+        "Fields": {
+            "System.Id": 470951,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Title": "Доработки. Кривое имя дочерней коллекции в ошибки валидации",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-03T10:19:09.723Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-19T13:03:21.44Z",
+            "System.Tags": "доработки"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/470951"
+    },
+    {
+        "Id": 470953,
+        "Rev": 15,
+        "Fields": {
+            "System.Id": 470953,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Title": "Доработки. Перенести настройку кода параметра в другое место",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-03T10:28:46.837Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-20T05:27:25.763Z",
+            "System.Tags": "доработки"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/470953"
+    },
+    {
+        "Id": 471626,
+        "Rev": 15,
+        "Fields": {
+            "System.Id": 471626,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Parent": 452276,
+            "System.Title": "Мастер диалоги. Coverage",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-06T05:27:00.303Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-20T11:00:35.337Z",
+            "System.Tags": "Feature"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/471626"
+    },
+    {
+        "Id": 472018,
+        "Rev": 16,
+        "Fields": {
+            "System.Id": 472018,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Parent": 451083,
+            "System.Title": "[1] Экспорт настроек. Генерация ошибки, если пакет не поддерживается",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-09T04:52:31.89Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-17T12:16:43.393Z",
+            "System.Tags": "Feature"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/472018"
+    },
+    {
+        "Id": 472053,
+        "Rev": 17,
+        "Fields": {
+            "System.Id": 472053,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Title": "Техдолг. Диалоги. Дважды обход по всем выражениям и получение токенов при копировании",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-09T05:34:33.843Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-19T06:08:55.937Z",
+            "System.Tags": "Техдолг"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/472053"
+    },
+    {
+        "Id": 472126,
+        "Rev": 12,
+        "Fields": {
+            "System.Id": 472126,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Title": "Техдолг. Coverage",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-09T06:50:46.36Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-12T06:01:07.82Z",
+            "System.Tags": "Техдолг"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/472126"
+    },
+    {
+        "Id": 472148,
+        "Rev": 13,
+        "Fields": {
+            "System.Id": 472148,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Parent": 451083,
+            "System.Title": "Импорт настроек. Coverage",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-09T07:02:41.973Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-17T09:08:16.953Z",
+            "System.Tags": "Feature"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/472148"
+    },
+    {
+        "Id": 472356,
+        "Rev": 9,
+        "Fields": {
+            "System.Id": 472356,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Title": "Срочные замечания. Аура. Не экспортируется вариант процесса. Нужны права на изменения на справочник, который используется внутри процесса",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-09T13:14:01.477Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-10T13:08:39.013Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/472356"
+    },
+    {
+        "Id": 473141,
+        "Rev": 10,
+        "Fields": {
+            "System.Id": 473141,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Title": "Доработки. !! Состояние ЗЗУ. Отображать на вкладе Состояние ФИО замещающего, выполнившего задание",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-13T05:17:51.497Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-17T06:02:49.68Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/473141"
+    },
+    {
+        "Id": 473530,
+        "Rev": 13,
+        "Fields": {
+            "System.Id": 473530,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Title": "Мастер диалоги. Пропадает добавленное действие при запуске диалога из карточки",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-16T09:09:32.797Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-19T06:11:39.93Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/473530"
+    },
+    {
+        "Id": 473774,
+        "Rev": 15,
+        "Fields": {
+            "System.Id": 473774,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Parent": 473576,
+            "System.Title": "Диалоги. Предпросмотр и график отпусков. Исследование",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-03-13T06:03:08.59Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-03-17T06:07:11.847Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/473774"
+    },
+    {
+        "Id": 473789,
+        "Rev": 12,
+        "Fields": {
+            "System.Id": 473789,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Title": "Срочные замечания. [Aura] При попытке импорта на стенд ноу-код схемы упала ошибка: Ошибка обработки элемента с типом \"Вариант процесса\"",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-17T05:30:07.087Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-19T06:09:13.657Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/473789"
+    },
+    {
+        "Id": 474135,
+        "Rev": 19,
+        "Fields": {
+            "System.Id": 474135,
+            "System.IterationPath": "Kotlin\\Flex\\RX26.1\\26.1 Iteration 5",
+            "System.WorkItemType": "User Story",
+            "System.State": "Closed",
+            "System.Title": "[Cat.1] Доработки. Нет документации для NoCode Server, Shared, ClientBase DLL",
+            "Microsoft.VSTS.Common.ActivatedDate": "2026-02-18T07:30:38.397Z",
+            "Microsoft.VSTS.Common.ClosedDate": "2026-02-20T06:01:14.463Z"
+        },
+        "Url": "https://rxtfs.directum.ru/IS-Builder8/_apis/wit/workItems/474135"
+    }
+]
