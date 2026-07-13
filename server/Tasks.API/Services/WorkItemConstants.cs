@@ -32,5 +32,3 @@ AND [System.IterationPath] = '{0}'
 AND [Microsoft.VSTS.Common.Activity] <> 'Testing'";
 
 }
-
-

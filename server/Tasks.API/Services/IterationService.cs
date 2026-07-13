@@ -7,6 +7,8 @@ namespace Tasks.API.Services;
 
 public class IterationService
 {
+  #region Поля
+
   private readonly Uri _uri;
 
   private readonly TeamContext _teamContext;
@@ -14,6 +16,8 @@ public class IterationService
   private readonly VssBasicCredential _credentials;
 
   private readonly WorkItemService _workItemService;
+
+  #endregion
 
   public IterationService(Uri url, string pat, TeamContext teamContext, WorkItemService workItemService)
   {
@@ -63,9 +67,9 @@ public class IterationService
   {
     var iteration = await GetIterationAsync(iterationId);
     var items = (await _workItemService.GetAsync(iteration.Path));
-    //Если таска открылась в предыдущем спринте, а закрылась в следующем
+
+    //Если таска открылась в предыдущем спринте, а закрылась в следующем?
     // кол-во закрытых тасок в US на текущем спринте
-    // 
 
     var allTasks = items.Where(x => x.WorkItemType != "User Story").ToList();
     var allUS = items.Where(x => x.WorkItemType == "User Story").ToList();

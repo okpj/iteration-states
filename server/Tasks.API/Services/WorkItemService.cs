@@ -17,14 +17,12 @@ public class WorkItemService
 
   #endregion
 
-
   public WorkItemService(Uri url, string pat, string project, string team)
   {
     _project = project;
     _uri = url;
     _credentials = new VssBasicCredential(string.Empty, pat);
   }
-
 
   public async Task<IList<ApiWorkItem>> GetAsync(string iteration)
   {
