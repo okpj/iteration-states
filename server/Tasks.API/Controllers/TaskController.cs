@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Options;
-using Tasks.API.Model;
+using Microsoft.AspNetCore.Mvc;
 using Tasks.API.Services;
 
 namespace Tasks.API.Controllers;
@@ -9,17 +7,17 @@ namespace Tasks.API.Controllers;
 [ApiController]
 public class TaskController : ControllerBase
 {
-  private readonly TfsApiOptions _options;
-  public TaskController(IOptions<TfsApiOptions> options)
+  private readonly TfsServiceFactory _serviceFactory;
+
+  public TaskController(TfsServiceFactory serviceFactory)
   {
-    _options = options.Value;
+    _serviceFactory = serviceFactory;
   }
 
   [HttpGet("get-iterations-work-items")]
   public async Task<IActionResult> GetIterationsWorkItems([FromQuery] string iteration, [FromQuery] string team)
   {
-    var baseUrl = new Uri(_options.Host);
-    var workItemService = new WorkItemService(new Uri(baseUrl, _options.Organization), _options.Pat, _options.Project, team);
+    var workItemService = _serviceFactory.CreateWorkItemService();
     var result = await workItemService.GetAsync(iteration);
     return Ok(result);
   }

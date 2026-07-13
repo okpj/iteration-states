@@ -2,7 +2,7 @@
 
 public class TfsApiOptions
 {
-  public const string Position = "TfsAPI";
+  public const string SectionName = "TfsAPI";
 
   public string Organization { get; set; }
 

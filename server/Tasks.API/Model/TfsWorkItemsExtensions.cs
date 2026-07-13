@@ -1,20 +1,34 @@
-﻿using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
+using Microsoft.TeamFoundation.WorkItemTracking.WebApi.Models;
 
 namespace Tasks.API.Model;
 
 public static class TfsWorkItemsExtensions
 {
-  public static ApiWorkItem ToApiWorkItem(this WorkItem workItem, bool withOutParentId = false) => new ApiWorkItem()
+  public static ApiWorkItem ToApiWorkItem(this WorkItem workItem, bool withOutParentId = false)
   {
-    Id = workItem.Id!.Value,
-    ParentId = withOutParentId ? null : workItem.Fields.TryGetValue("System.Parent", out var parentId) ? int.Parse(parentId.ToString()!) : null,
-    WorkItemType = workItem.Fields.TryGetValue("System.WorkItemType", out var type) ? type.ToString() : null,
-    Title = workItem.Fields.TryGetValue("System.Title", out var title) ? title.ToString() : null,
-    IterationPath = workItem.Fields.TryGetValue("System.IterationPath", out var iteration) ? iteration.ToString() : null,
-    State = workItem.Fields.TryGetValue("System.State", out var state) ? state.ToString() : null,
-    StoryPoints = workItem.Fields.TryGetValue("Microsoft.VSTS.Scheduling.StoryPoints", out var sp) ? int.Parse(sp.ToString()!) : null,
-    ActivatedDate = workItem.Fields.TryGetValue("Microsoft.VSTS.Common.ActivatedDate", out var activetedDate) ? DateTime.Parse(activetedDate.ToString()!) : null,
-    ClosedDate = workItem.Fields.TryGetValue("Microsoft.VSTS.Common.ClosedDate", out var closedDate) ? DateTime.Parse(closedDate.ToString()!) : null,
-    ResolvedDate = workItem.Fields.TryGetValue("Microsoft.VSTS.Common.ResolvedDate", out var resolvedDate) ? DateTime.Parse(resolvedDate.ToString()!) : null
-  };
+    var fields = workItem.Fields;
+
+    return new ApiWorkItem
+    {
+      Id = workItem.Id!.Value,
+      ParentId = withOutParentId ? null : GetInt(fields, "System.Parent"),
+      WorkItemType = GetString(fields, "System.WorkItemType"),
+      Title = GetString(fields, "System.Title"),
+      IterationPath = GetString(fields, "System.IterationPath"),
+      State = GetString(fields, "System.State"),
+      StoryPoints = GetInt(fields, "Microsoft.VSTS.Scheduling.StoryPoints"),
+      ActivatedDate = GetDate(fields, "Microsoft.VSTS.Common.ActivatedDate"),
+      ClosedDate = GetDate(fields, "Microsoft.VSTS.Common.ClosedDate"),
+      ResolvedDate = GetDate(fields, "Microsoft.VSTS.Common.ResolvedDate")
+    };
+  }
+
+  private static string? GetString(IDictionary<string, object> fields, string key) =>
+    fields.TryGetValue(key, out var value) ? value.ToString() : null;
+
+  private static int? GetInt(IDictionary<string, object> fields, string key) =>
+    fields.TryGetValue(key, out var value) ? int.Parse(value.ToString()!) : null;
+
+  private static DateTime? GetDate(IDictionary<string, object> fields, string key) =>
+    fields.TryGetValue(key, out var value) ? DateTime.Parse(value.ToString()!) : null;
 }

@@ -27,74 +27,65 @@ public class IterationService
     _workItemService = workItemService;
   }
 
+  private const string UserStoryType = "User Story";
+  private const string ClosedState = "Closed";
+
   public async Task<IEnumerable<IterationApi>> GetIterationsAsync()
   {
-    using (var httpClient = new WorkHttpClient(this._uri, _credentials))
-    {
-      var iterations = await httpClient.GetTeamIterationsAsync(_teamContext);
+    using var httpClient = new WorkHttpClient(_uri, _credentials);
+    var iterations = await httpClient.GetTeamIterationsAsync(_teamContext);
 
-      return iterations.Select(x => new IterationApi
-      {
-        Id = x.Id,
-        Name = x.Name,
-        Path = x.Path,
-        StartDate = x.Attributes.StartDate,
-        FinishDate = x.Attributes.FinishDate,
-        TimeFrame = x.Attributes.TimeFrame,
-      });
-    }
+    return iterations.Select(ToIterationApi);
   }
 
   public async Task<IterationApi> GetIterationAsync(Guid iterationId)
   {
-    using (var httpClient = new WorkHttpClient(this._uri, _credentials))
-    {
-      var iteration = await httpClient.GetTeamIterationAsync(_teamContext, iterationId);
+    using var httpClient = new WorkHttpClient(_uri, _credentials);
+    var iteration = await httpClient.GetTeamIterationAsync(_teamContext, iterationId);
 
-      return new IterationApi
-      {
-        Id = iteration.Id,
-        Name = iteration.Name,
-        Path = iteration.Path,
-        StartDate = iteration.Attributes.StartDate,
-        FinishDate = iteration.Attributes.FinishDate,
-        TimeFrame = iteration.Attributes.TimeFrame,
-      };
-    }
+    return ToIterationApi(iteration);
   }
 
   public async Task<IterationStatApi> GetStatAsync(Guid iterationId)
   {
     var iteration = await GetIterationAsync(iterationId);
-    var items = (await _workItemService.GetAsync(iteration.Path));
+    var items = await _workItemService.GetAsync(iteration.Path);
 
-    //Если таска открылась в предыдущем спринте, а закрылась в следующем?
-    // кол-во закрытых тасок в US на текущем спринте
+    // Не учитывает случай, когда таска открылась в предыдущем спринте, а закрылась в следующем.
+    var tasks = items.Where(x => x.WorkItemType != UserStoryType).ToList();
+    var userStories = items.Where(x => x.WorkItemType == UserStoryType).ToList();
 
-    var allTasks = items.Where(x => x.WorkItemType != "User Story").ToList();
-    var allUS = items.Where(x => x.WorkItemType == "User Story").ToList();
-    var closedTask = allTasks.Where(x => x.State == "Closed"
-      && (x.ClosedDate <= iteration.FinishDate || x.ResolvedDate <= iteration.FinishDate)).ToList();
-    var closedUS = allUS.Where(x => x.State == "Closed"
-      && (x.ClosedDate <= iteration.FinishDate || x.ResolvedDate <= iteration.FinishDate)).ToList();
+    var closedTasks = tasks.Where(x => WasClosedBy(x, iteration.FinishDate)).ToList();
+    var closedUserStories = userStories.Where(x => WasClosedBy(x, iteration.FinishDate)).ToList();
 
-    int countSP = allTasks.Sum(x => x.StoryPoints ?? 0);
-    int closedSP = closedTask.Sum(x => x.StoryPoints ?? 0);
-    var percentClosedSP = countSP == 0 ? 0 : Math.Round(((double)closedSP / (double)countSP) * 100);
-
-    int countUS = allUS.Count;
-    int countClosedUS = closedUS.Count;
-    var percentClosedUS = countUS == 0 ? 0 : Math.Round(((double)countClosedUS / (double)countUS) * 100);
+    var countSP = tasks.Sum(x => x.StoryPoints ?? 0);
+    var closedSP = closedTasks.Sum(x => x.StoryPoints ?? 0);
 
     return new IterationStatApi
     {
       Iteration = iteration.Name,
       CountSP = countSP,
       CountClosedSP = closedSP,
-      PercentClosedSP = percentClosedSP,
-      CountUS = countUS,
-      CountClosedUS = countClosedUS,
-      PercentClosedUS = percentClosedUS
+      PercentClosedSP = PercentOf(closedSP, countSP),
+      CountUS = userStories.Count,
+      CountClosedUS = closedUserStories.Count,
+      PercentClosedUS = PercentOf(closedUserStories.Count, userStories.Count)
     };
   }
+
+  private static bool WasClosedBy(ApiWorkItem item, DateTime? finishDate) =>
+    item.State == ClosedState && (item.ClosedDate <= finishDate || item.ResolvedDate <= finishDate);
+
+  private static double PercentOf(int part, int total) =>
+    total == 0 ? 0 : Math.Round((double)part / total * 100);
+
+  private static IterationApi ToIterationApi(TeamSettingsIteration iteration) => new()
+  {
+    Id = iteration.Id,
+    Name = iteration.Name,
+    Path = iteration.Path,
+    StartDate = iteration.Attributes.StartDate,
+    FinishDate = iteration.Attributes.FinishDate,
+    TimeFrame = iteration.Attributes.TimeFrame,
+  };
 }

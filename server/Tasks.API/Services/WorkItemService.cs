@@ -17,7 +17,7 @@ public class WorkItemService
 
   #endregion
 
-  public WorkItemService(Uri url, string pat, string project, string team)
+  public WorkItemService(Uri url, string pat, string project)
   {
     _project = project;
     _uri = url;
@@ -28,45 +28,50 @@ public class WorkItemService
   {
     var wiql = new Wiql()
     {
-      Query = string.Format(WorkItemConstants.Query, iteration)
+      Query = string.Format(WorkItemConstants.Query, _project, iteration)
     };
 
-    using (var httpClient = new WorkItemTrackingHttpClient(_uri, _credentials))
+    using var httpClient = new WorkItemTrackingHttpClient(_uri, _credentials);
+    try
     {
-      try
-      {
-        var result = await httpClient.QueryByWiqlAsync(wiql, _project);
-        var ids = result.WorkItems.Select(item => item.Id).ToArray();
+      var result = await httpClient.QueryByWiqlAsync(wiql, _project);
+      var ids = result.WorkItems.Select(item => item.Id).ToArray();
 
-        if (ids.Length == 0)
-          return Array.Empty<ApiWorkItem>();
+      if (ids.Length == 0)
+        return Array.Empty<ApiWorkItem>();
 
-        var tfsResultItems = await httpClient.GetWorkItemsAsync(ids, fields: WorkItemConstants.Fields, result.AsOf);
-        var resultItems = tfsResultItems!.Select(x => x.ToApiWorkItem()).ToList();
+      var workItems = await GetApiWorkItemsAsync(httpClient, ids, result.AsOf);
+      await AttachParentsAsync(httpClient, workItems);
 
-        var parentIds = resultItems!.Where(x => x.ParentId.HasValue)
-          .Select(x => x.ParentId!.Value)
-          .Distinct().ToArray();
-
-        if (parentIds?.Length > 0)
-        {
-          var tfsParents = await httpClient.GetWorkItemsAsync(parentIds, fields: WorkItemConstants.Fields);
-          var parents = tfsParents!.Select(x => x.ToApiWorkItem(withOutParentId: true));
-          resultItems.AddRange(parents);
-          foreach (var item in resultItems)
-          {
-            var parent = parents.FirstOrDefault(x => x.Id == item.ParentId);
-            item.Parent = parent;
-          }
-        }
-
-        return resultItems ?? [];
-      }
-      catch (Exception ex)
-      {
-        Console.WriteLine(ex.Message);
-        return [];
-      }
+      return workItems;
     }
+    catch (Exception ex)
+    {
+      Console.WriteLine(ex.Message);
+      return [];
+    }
+  }
+
+  private static async Task<List<ApiWorkItem>> GetApiWorkItemsAsync(WorkItemTrackingHttpClient httpClient, int[] ids, DateTime? asOf)
+  {
+    var tfsWorkItems = await httpClient.GetWorkItemsAsync(ids, fields: WorkItemConstants.Fields, asOf);
+    return tfsWorkItems.Select(x => x.ToApiWorkItem()).ToList();
+  }
+
+  private static async Task AttachParentsAsync(WorkItemTrackingHttpClient httpClient, List<ApiWorkItem> workItems)
+  {
+    var parentIds = workItems.Where(x => x.ParentId.HasValue)
+      .Select(x => x.ParentId!.Value)
+      .Distinct().ToArray();
+
+    if (parentIds.Length == 0)
+      return;
+
+    var tfsParents = await httpClient.GetWorkItemsAsync(parentIds, fields: WorkItemConstants.Fields);
+    var parents = tfsParents.Select(x => x.ToApiWorkItem(withOutParentId: true)).ToList();
+    workItems.AddRange(parents);
+
+    foreach (var item in workItems)
+      item.Parent = parents.FirstOrDefault(x => x.Id == item.ParentId);
   }
 }

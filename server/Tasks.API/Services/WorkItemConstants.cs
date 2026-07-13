@@ -26,9 +26,9 @@ internal static class WorkItemConstants
 [System.Parent],
 [Microsoft.VSTS.Scheduling.StoryPoints],
 [System.IterationPath]
-FROM WorkItems WHERE[System.TeamProject] = 'Kotlin' 
+FROM WorkItems WHERE [System.TeamProject] = '{0}'
 AND ([System.WorkItemType] = 'Task' OR [System.WorkItemType] = 'Bug')
-AND [System.IterationPath] = '{0}' 
+AND [System.IterationPath] = '{1}'
 AND [Microsoft.VSTS.Common.Activity] <> 'Testing'";
 
 }

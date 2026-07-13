@@ -1,19 +1,16 @@
 using Tasks.API.Model;
+using Tasks.API.Services;
 
 const string cors = "CorsPolicy";
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
-builder.Services.AddControllers();
-
-
-var configuration = builder.Configuration;
 var services = builder.Services;
+services.AddControllers();
 
-
-services.Configure<TfsApiOptions>(configuration.GetSection(TfsApiOptions.Position));
+services.Configure<TfsApiOptions>(builder.Configuration.GetSection(TfsApiOptions.SectionName));
+services.AddScoped<TfsServiceFactory>();
 
 services.AddCors(options =>
 {
