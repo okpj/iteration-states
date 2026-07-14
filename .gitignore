@@ -84,3 +84,4 @@ yarn-error.log*
 /server/.vs
 /client/taskstat/node_modules
 *.user
+/client/taskstat/.claude
