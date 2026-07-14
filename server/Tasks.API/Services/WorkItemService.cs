@@ -24,12 +24,25 @@ public class WorkItemService
     _credentials = new VssBasicCredential(string.Empty, pat);
   }
 
-  public async Task<IList<ApiWorkItem>> GetAsync(string iteration)
+  public Task<IList<ApiWorkItem>> GetAsync(string iteration)
   {
-    var wiql = new Wiql()
-    {
-      Query = string.Format(WorkItemConstants.Query, _project, iteration)
-    };
+    var query = string.Format(WorkItemConstants.Query, _project, iteration);
+    return RunQueryAsync(query);
+  }
+
+  // Помимо задач с IterationPath текущего спринта, забирает и те, что были активны
+  // в его временных рамках (например, открылись раньше, а закрылись уже в этом спринте).
+  // teamIterationRoot ограничивает выборку деревом итераций конкретной команды.
+  public Task<IList<ApiWorkItem>> GetActiveDuringIterationAsync(string iterationPath, string teamIterationRoot, DateTime startDate, DateTime finishDate)
+  {
+    var query = string.Format(WorkItemConstants.StatQuery, _project, teamIterationRoot, iterationPath,
+      finishDate.ToString("yyyy-MM-dd"), startDate.ToString("yyyy-MM-dd"));
+    return RunQueryAsync(query);
+  }
+
+  private async Task<IList<ApiWorkItem>> RunQueryAsync(string query)
+  {
+    var wiql = new Wiql { Query = query };
 
     using var httpClient = new WorkItemTrackingHttpClient(_uri, _credentials);
     try

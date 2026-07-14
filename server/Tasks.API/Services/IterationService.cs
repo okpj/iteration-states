@@ -49,9 +49,9 @@ public class IterationService
   public async Task<IterationStatApi> GetStatAsync(Guid iterationId)
   {
     var iteration = await GetIterationAsync(iterationId);
-    var items = await _workItemService.GetAsync(iteration.Path);
+    var teamIterationRoot = GetParentPath(iteration.Path);
+    var items = await _workItemService.GetActiveDuringIterationAsync(iteration.Path, teamIterationRoot, iteration.StartDate!.Value, iteration.FinishDate!.Value);
 
-    // Не учитывает случай, когда таска открылась в предыдущем спринте, а закрылась в следующем.
     var tasks = items.Where(x => x.WorkItemType != UserStoryType).ToList();
     var userStories = items.Where(x => x.WorkItemType == UserStoryType).ToList();
 
@@ -71,6 +71,13 @@ public class IterationService
       CountClosedUS = closedUserStories.Count,
       PercentClosedUS = PercentOf(closedUserStories.Count, userStories.Count)
     };
+  }
+
+  // Родительский узел пути спринта (Project\Team\Sprint -> Project\Team) — задаёт дерево итераций команды.
+  private static string GetParentPath(string iterationPath)
+  {
+    var separatorIndex = iterationPath.LastIndexOf('\\');
+    return separatorIndex < 0 ? iterationPath : iterationPath[..separatorIndex];
   }
 
   private static bool WasClosedBy(ApiWorkItem item, DateTime? finishDate) =>
