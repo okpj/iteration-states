@@ -62,6 +62,7 @@ AND (
     [System.State] = 'Closed'
     AND [Microsoft.VSTS.Common.ActivatedDate] <= '{3}'
     AND ([Microsoft.VSTS.Common.ClosedDate] >= '{4}' OR [Microsoft.VSTS.Common.ResolvedDate] >= '{4}')
+    AND ([Microsoft.VSTS.Common.ClosedDate] <= '{3}' OR [Microsoft.VSTS.Common.ResolvedDate] <= '{3}')
   )
 )";
 
